@@ -13,10 +13,10 @@ public Plugin myinfo =
 
 public void OnMapStart()
 {
-	CreateTimer(4.0, Timer_UpdateYaw, _, TIMER_REPEAT | TIMER_FLAG_NO_MAPCHANGE);
+	CreateTimer(4.0, Timer_Update, _, TIMER_REPEAT | TIMER_FLAG_NO_MAPCHANGE);
 }
 
-public Action Timer_UpdateYaw(Handle timer, any data)
+public Action Timer_Update(Handle timer, any data)
 {
 	for(int client = 1; client <= MaxClients; client++)
 	{
